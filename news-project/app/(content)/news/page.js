@@ -1,4 +1,4 @@
-import NewList from "../components/new-list";
+import NewList from "@/app/components/new-list";
 
 import { DUMMY_NEWS } from "@/dummy-news";
 

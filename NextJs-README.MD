@@ -118,6 +118,8 @@ Usando [[...]], puoi avere una rotta che "cattura "anche quando non ci sono para
 - Catch-all opzionale con [[...]]: Cattura ogni parte della URL ma è opzionale, quindi può essere usato anche per gestire percorsi vuoti.
 - Puoi usarlo per creare rotte molto flessibili e dinamiche, come pagine di filtri, categorie, o qualsiasi tipo di URL variabile.
 
+## Rotte di gruppo
+
 ## Page, Layout e Loading
 
 ### Page
