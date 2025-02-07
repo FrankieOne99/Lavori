@@ -8,7 +8,7 @@ import React from "react";
 const InterceptedImagePage = ({ params }) => {
   const router = useRouter();
 
-  const newsItemSlug = params.slug;
+  const newsItemSlug = React.use(params).slug;
   const newsItem = DUMMY_NEWS.find(
     (newsItem) => newsItem.slug === newsItemSlug
   );

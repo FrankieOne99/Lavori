@@ -120,6 +120,9 @@ Usando [[...]], puoi avere una rotta che "cattura "anche quando non ci sono para
 
 ## Rotte di gruppo
 
+Le Route Groups consentono di suddividere le rotte in gruppi, raggruppando i file senza che la struttura delle cartelle influisca direttamente sulle URL. Questo è utile quando hai bisogno di gestire funzionalità specifiche senza dover cambiare la struttura delle rotte.
+Si indetificano, rinominando una cartella fra le partensi tonde. ES: (nome-cartella);
+
 ## Page, Layout e Loading
 
 ### Page
@@ -184,3 +187,8 @@ E' utile soprattutto in relazione alla generazione dinamica di pagine (SSR - Ser
 ### RevalidatePath()
 
 revalidatePath() è utilizzata per "invalidare" la cache di una specifica pagina o percorso e forzare una rigenerazione istantanea della stessa da parte di Next.js. È particolarmente utile quando si vuole aggiornare il contenuto di una pagina a seguito di un'azione o di un cambiamento (per esempio, una modifica nel database o una richiesta da un'API).
+
+## ROUTE HANDLER
+
+Il route handler è un file, che va rinominato "route.js" in cui sono presenti delle funzioni da esportare per le CRUD. Funzioni che quindi devo essere chiamate con un metodi dell'HTML.
+Questi file, NON restituiscono pagine da renderizzare bensì dei dati in formato JSON
