@@ -1,10 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 import { notFound } from "next/navigation";
-
 import { DUMMY_NEWS } from "@/dummy-news";
 import React from "react";
 
-const ImagePage = ({ params }) => {
+const InterceptedImagePage = ({ params }) => {
   const newsItemSlug = params.slug;
   const newsItem = DUMMY_NEWS.find(
     (newsItem) => newsItem.slug === newsItemSlug
@@ -14,10 +13,15 @@ const ImagePage = ({ params }) => {
     notFound();
   }
   return (
-    <div className="fullscreen-image">
-      <img src={`/images/news/${newsItem.image}`} alt={newsItem.title} />
-    </div>
+    <>
+      <div className="modal-backdrop" />
+      <dialog className="modal" open>
+        <div className="fullscreen-image">
+          <img src={`/images/news/${newsItem.image}`} alt={newsItem.title} />
+        </div>
+      </dialog>
+    </>
   );
 };
 
-export default ImagePage;
+export default InterceptedImagePage;
