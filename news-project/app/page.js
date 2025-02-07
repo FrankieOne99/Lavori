@@ -7,5 +7,6 @@ export default function HomePage() {
       <h1>Next.js Routing & Page Rendering</h1>
       <Link href="/news">Last News</Link>
     </div>
+   
   );
 }
