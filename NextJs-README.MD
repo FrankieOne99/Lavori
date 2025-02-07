@@ -99,6 +99,7 @@ Il file page.js è il file principale che definisce una pagina in Next.js nella 
 
 ### Layout 
 l file layout.js viene utilizzato per definire un layout condiviso per più pagine o sezioni dell'applicazione. È utile quando desideri avere una struttura comune (come intestazioni, piè di pagina, sidebar, ecc.) che venga ripetuta su diverse pagine. Il layout avvolge il contenuto delle pagine figlie.
+In next è possibile creare Layout annidati. E' sufficiente creare il proprio Layout (come component) e aggiungerlo alle pagine in cui desideriamo sia presente--> per aggiungerlo a tutte le paggine basta inserirlo nella pagina principale di layout
 
 ### Loading  
 Il file loading.js viene utilizzato per gestire e mostrare un "loading state" (stato di caricamento) quando un componente o una pagina è in fase di caricamento. È utile per creare una migliore esperienza utente, mostrando un'indicazione visiva (come un spinner o un messaggio) mentre i dati o il componente sono in attesa di essere caricati.
