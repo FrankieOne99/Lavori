@@ -90,6 +90,8 @@ Nella cartella "app" ogni qualvolta creaiamo una cartella (dentro cui poi si tro
 In nextjs è possibile generare delle rotte dinamiche.
 Se per esempio abbiamo un component "blog" al cui interno ci sono dei post, e vogliamo creare delle rotte per ciascun posto non è sostenibile creare un compoent per tutti i post. Possiamo, creare un unico component che aggiornerà la rotta in base al post selezionato. per fare ciò bastare creare una cartella il cui nome DEVE essere messo fra le quadre (esempio [slug] ), all'interno di Blog. 
 
+## Rotte parallele 
+Le rotte parallele si riferiscono a una funzionalità che consente di caricare diverse sezioni di una pagina in modo indipendente e parallelo, migliorando l’esperienza utente e le prestazioni del sito. Questo approccio fa parte del sistema di layout dinamici che sfrutta la gestione asincrona dei dati e il rendering lato server.
 
 ## Page, Layout e Loading 
 
