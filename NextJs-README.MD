@@ -96,6 +96,26 @@ Rispetto al pages router permette di utilizzare e supportare features più recen
 Anche qui il routing è basato sul file system, MA in questo caso rotte vengono definte dalle cartelle e non dai file.
 Nella cartella "app" ogni qualvolta creaiamo una cartella (dentro cui poi si troverà il file js o ts con la logica) questa diverrà automaticamente disponibile come rotta. Possiamo creare delle sottorotte creando cartelle una dentro l'altra.
 
+## Rotta API
+
+Next.js consente di creare facilmente endpoint API direttamente all'interno della stessa applicazione. Per fare ciò è sufficente creare una cartella "api" all'interno della cartella "pages" o "app". Queste API possono essere usate per gestire richieste, interagire con database, inviare email, ecc., senza necessitare di un backend separato.
+
+## Supporto per TypeScript
+
+Next.js supporta nativamente TypeScript. E' possibile creare progetti quindi utilizzando sia javascript che il suo superset.
+
+## Supporto per CSS e Sass
+
+Next.js permette di usare CSS e Sass senza bisogno di configurazioni particolari.
+
+- E' presente un file "globals.css" con gli stili globali.
+- In Next.js, i CSS Modules sono un modo per scrivere stili CSS che sono locali a un determinato componente.
+  Grazie a questa funzionalità, i selettori CSS sono automaticamente "scoped" (localizzati) al componente.
+
+## Middleware
+
+Il middleware in Next.js è una funzionalità che ti permette di eseguire logica personalizzata prima che una richiesta raggiunga la rotta di destinazione. In altre parole, il middleware agisce come una sorta di "filtro" che e può eseguire operazioni come il controllo delle autorizzazioni, la gestione dei cookie, il reindirizzamento, l'analisi delle richieste, la gestione della sessione etc. Il file middleware fa inserito nella cartella principale del progetto "src".
+
 ## Rotte dinamiche
 
 In nextjs è possibile generare delle rotte dinamiche.
