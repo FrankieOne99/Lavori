@@ -4,9 +4,6 @@ Nextjs è un FRAMEWORK per React.
 Facilita la creazione di web application e supporta la generazione di siti statici e rendering lato server.
 Si tratta di un framework, che rispetto alla semplice libreria React ci permette di creare delle applicazioni FULLSTACK.
 
-Possiamo quindi utilizzare nextjs per creare file html che permettono di “trasportare” il tuo applicativo su un repository online
-(su una CDN o un server condiviso).
-
 ## CARATTERISTICHE PRINCIPALi:
 
 - Rendering lato server (SSR)
@@ -124,7 +121,7 @@ Next.js permette di usare CSS e Sass senza bisogno di configurazioni particolari
 - In Next.js, i CSS Modules sono un modo per scrivere stili CSS che sono locali a un determinato componente.
   Grazie a questa funzionalità, i selettori CSS sono automaticamente "scoped" (localizzati) al componente.
 
-## MIDDLEWERE
+## MIDDLEWARE
 
 Il middleware in Next.js è una funzionalità che ti permette di eseguire logica personalizzata prima che una richiesta raggiunga la rotta di destinazione. In altre parole, il middleware agisce come una sorta di "filtro" che e può eseguire operazioni come il controllo delle autorizzazioni, la gestione dei cookie, il reindirizzamento, l'analisi delle richieste, la gestione della sessione etc. Il file middleware fa inserito nella cartella principale del progetto "src".
 
