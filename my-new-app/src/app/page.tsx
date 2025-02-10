@@ -1,10 +1,13 @@
-import styles from "./page.module.css";
-import Link from "next/link";
+import Hero from "@/components/hero";
+
+import homeImg from "public/home.jpg";
 
 export default function Home() {
   return (
-    <div>
-      <h1>This is my Homepage</h1>
-    </div>
+    <Hero
+      imgData={homeImg}
+      imgAlt="car factory"
+      title="Professional Cloud Hosting"
+    />
   );
 }

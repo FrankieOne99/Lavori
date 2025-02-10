@@ -1,11 +1,13 @@
-import React from "react";
+import Hero from "@/components/hero";
 
-const Blog = () => {
+import scaleImg from "public/scale.jpg";
+
+export default function Blog() {
   return (
-    <div>
-      <h1>This is our Blog</h1>
-    </div>
+    <Hero
+      imgData={scaleImg}
+      imgAlt="BomberScaleu"
+      title="I am the goat of Football Friends"
+    />
   );
-};
-
-export default Blog;
+}

@@ -1,11 +1,13 @@
-import React from "react";
+import Hero from "@/components/hero";
 
-const NewsPage = () => {
+import relImg from "public/reliability.jpg";
+
+export default function News() {
   return (
-    <div>
-      <h1>This is the NewsPage</h1>
-    </div>
+    <Hero
+      imgData={relImg}
+      imgAlt="welding"
+      title="Super high reliability hosting"
+    />
   );
-};
-
-export default NewsPage;
+}

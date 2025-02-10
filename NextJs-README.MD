@@ -25,7 +25,7 @@ Possiamo quindi utilizzare nextjs per creare file html che permettono di “tras
 - Basato sul filesystem. Non è necessario configurare le rotte mediante il codice.
 - Ottimizzazione automatica dei percorsi
 
-## API routes
+## API ROUTES
 
 - Creazione API con funzioni serveless → nextjs è un framework FULLSTACK. Permette di generare anche il backend.
 - Supporto nativo per REST e GraphQL (nuovo pattern per la comunicazione tra client e backend).
@@ -47,6 +47,14 @@ La creazione di pagine multilingua è facilitata. Per fare ciò, la documentazio
 ## DEPLOY E HOSTING
 
 Buona compatibilità con più piattaforme di hosting
+
+### Vercel
+
+Vercel è una piattaforma di hosting che rende molto facile e veloce pubblicare siti web e applicazioni web. Vercel, oltre a fornire i servizi di hosting è anche l'azienda che ha sviluppato nextjs. il comando per eseguire vercel da terminale è
+
+- npx vercel
+
+sarà necessario accedere con il proprio account (o crearne uno).
 
 ## ECOSISTEMA E COMUNITA’
 
@@ -81,11 +89,11 @@ Se sono installati correttamente il comando per iniziare un nuovo progetto è:
 - "\_document.tsx"→diciamo come è impostata la pagina.
   (possiamo usarlo per inserire un class a TUTTE le pagine, o ad esempio il footer).
 
-## Turbopack
+### TURBOPACK
 
 Il pacchetto turbopack in Next.js è un nuovo bundler (un sistema che prepara il codice per la produzione, raggruppando e ottimizzando i file) ottimizzato sia per javascript che per typescrit. E' scritto in linguaggio rust, e può essere utilizzato sia con il "Pages router" che con "l'app router". Con l'ultima versione di nextjs( Febbraio 2025) è stabile, pur non supportando ancora alcune funzioni. come ad esempio il next build. (supporta solo next dev).
 
-## Pages router o App router?
+## PAGES ROUTER O APP ROUTER?
 
 ### Pages router
 
@@ -100,15 +108,15 @@ Rispetto al pages router permette di utilizzare e supportare features più recen
 Anche qui il routing è basato sul file system, MA in questo caso rotte vengono definte dalle cartelle e non dai file.
 Nella cartella "app" ogni qualvolta creaiamo una cartella (dentro cui poi si troverà il file js o ts con la logica) questa diverrà automaticamente disponibile come rotta. Possiamo creare delle sottorotte creando cartelle una dentro l'altra.
 
-## Rotta API
+## ROTTA API
 
 Next.js consente di creare facilmente endpoint API direttamente all'interno della stessa applicazione. Per fare ciò è sufficente creare una cartella "api" all'interno della cartella "pages" o "app". Queste API possono essere usate per gestire richieste, interagire con database, inviare email, ecc., senza necessitare di un backend separato.
 
-## Supporto per TypeScript
+## SUPPORTO PER TYPESCRIPT
 
 Next.js supporta nativamente TypeScript. E' possibile creare progetti quindi utilizzando sia javascript che il suo superset.
 
-## Supporto per CSS e Sass
+## SUPPORTO PER CSS E SASS
 
 Next.js permette di usare CSS e Sass senza bisogno di configurazioni particolari.
 
@@ -116,22 +124,22 @@ Next.js permette di usare CSS e Sass senza bisogno di configurazioni particolari
 - In Next.js, i CSS Modules sono un modo per scrivere stili CSS che sono locali a un determinato componente.
   Grazie a questa funzionalità, i selettori CSS sono automaticamente "scoped" (localizzati) al componente.
 
-## Middleware
+## MIDDLEWERE
 
 Il middleware in Next.js è una funzionalità che ti permette di eseguire logica personalizzata prima che una richiesta raggiunga la rotta di destinazione. In altre parole, il middleware agisce come una sorta di "filtro" che e può eseguire operazioni come il controllo delle autorizzazioni, la gestione dei cookie, il reindirizzamento, l'analisi delle richieste, la gestione della sessione etc. Il file middleware fa inserito nella cartella principale del progetto "src".
 
-## Rotte dinamiche
+## ROTTE DINAMICHE
 
 In nextjs è possibile generare delle rotte dinamiche.
 Se per esempio abbiamo un component "blog" al cui interno ci sono dei post, e vogliamo creare delle rotte per ciascun posto non è sostenibile creare un compoent per tutti i post. Possiamo, creare un unico component che aggiornerà la rotta in base al post selezionato. per fare ciò bastare creare una cartella il cui nome DEVE essere messo fra le quadre (esempio [slug] ), all'interno di Blog.
 
-## Rotte parallele
+## ROTTE PARALLELE
 
 Le rotte parallele si riferiscono a una funzionalità che consente di caricare diverse sezioni di una pagina in modo indipendente e parallelo, migliorando l’esperienza utente e le prestazioni del sito. Questo approccio fa parte del sistema di layout dinamici che sfrutta la gestione asincrona dei dati e il rendering lato server.
 
 I nomi delle cartelle in cui si trovano queste rotte parallele DEVONO avere la "@" davanti.
 
-## Rotte Catch all
+## ROTTE CATCH ALL
 
 Una rotta catch-all è una rotta che cattura tutti i parametri che seguono una parte fissa dell'URL, senza limitazioni sul numero di segmenti.
 Usando [[...]], puoi avere una rotta che "cattura "anche quando non ci sono parametri, rendendo la parte della URL opzionale.
@@ -142,12 +150,12 @@ Usando [[...]], puoi avere una rotta che "cattura "anche quando non ci sono para
 - Catch-all opzionale con [[...]]: Cattura ogni parte della URL ma è opzionale, quindi può essere usato anche per gestire percorsi vuoti.
 - Puoi usarlo per creare rotte molto flessibili e dinamiche, come pagine di filtri, categorie, o qualsiasi tipo di URL variabile.
 
-## Rotte di gruppo
+## ROUTES GROUPS
 
 Le Route Groups consentono di suddividere le rotte in gruppi, raggruppando i file senza che la struttura delle cartelle influisca direttamente sulle URL. Questo è utile quando hai bisogno di gestire funzionalità specifiche senza dover cambiare la struttura delle rotte.
 Si indetificano, rinominando una cartella fra le partensi tonde. ES: (nome-cartella);
 
-## Page, Layout e Loading
+## PAGE, LAYOUT E LOADING
 
 ### Page
 
@@ -162,7 +170,7 @@ In next è possibile creare Layout annidati. E' sufficiente creare il proprio La
 
 Il file loading.js viene utilizzato per gestire e mostrare un "loading state" (stato di caricamento) quando un componente o una pagina è in fase di caricamento. È utile per creare una migliore esperienza utente, mostrando un'indicazione visiva (come un spinner o un messaggio) mentre i dati o il componente sono in attesa di essere caricati.
 
-## Componenti
+## COMPONENTI
 
 In nextjs esistono 2 tipologie di componenti:
 
@@ -181,11 +189,11 @@ Si tratta di component che il più delle volte contengono funzionalità disponib
 
 ATTENZIONE: questi tipi di component esistono entrambi in react, ma funzionano e posso essere usati solo quando si usa un framework come Nextjs
 
-## Suspense
+## SUSPENSE
 
 In Next.js, Suspense è una funzionalità che permette di gestire il caricamento di dati asincroni e risorse in modo più elegante, migliorando l'esperienza utente. Risulta utile nella gestione del caricamento di componenti che dipendono da risorse esterne o dati che devono essere recuperati in modo asincrono (ad esempio, chiamate API).
 
-## Component Image
+## COMPONENT IMAGE
 
 Utilizzando il component Image (nativo di nextJs) è possibile caricare immagini ottimizzate al meglio, anche grazie al LazyLoading.
 le sue propietà obbligatorie sono:

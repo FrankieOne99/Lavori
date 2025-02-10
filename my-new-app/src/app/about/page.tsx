@@ -1,11 +1,13 @@
-import React from "react";
+import Hero from "@/components/hero";
 
-const About = () => {
+import performanceImg from "public/performance.jpg";
+
+export default function About() {
   return (
-    <div>
-      <h1>Who we are?</h1>
-    </div>
+    <Hero
+      imgData={performanceImg}
+      imgAlt="welding"
+      title="We serve high perfomance application "
+    />
   );
-};
-
-export default About;
+}
