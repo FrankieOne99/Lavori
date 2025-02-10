@@ -81,6 +81,10 @@ Se sono installati correttamente il comando per iniziare un nuovo progetto è:
 - "\_document.tsx"→diciamo come è impostata la pagina.
   (possiamo usarlo per inserire un class a TUTTE le pagine, o ad esempio il footer).
 
+## Turbopack
+
+Il pacchetto turbopack in Next.js è un nuovo bundler (un sistema che prepara il codice per la produzione, raggruppando e ottimizzando i file) ottimizzato sia per javascript che per typescrit. E' scritto in linguaggio rust, e può essere utilizzato sia con il "Pages router" che con "l'app router". Con l'ultima versione di nextjs( Febbraio 2025) è stabile, pur non supportando ancora alcune funzioni. come ad esempio il next build. (supporta solo next dev)
+
 ## Pages router o App router?
 
 ### Pages router
