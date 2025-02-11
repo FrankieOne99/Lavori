@@ -77,19 +77,16 @@ Se sono installati correttamente il comando per iniziare un nuovo progetto è:
 
 - npx create-next-app@latest
 
-## FILE PRINCIPALI
-
-- "src"→ dove si trova il codice sorgente.
-- "public"→ dove si trovano le risorse esterne (tipo le immagini).
-- "node_modules"→ contiene tutti i pacchetti necessari al funzionamento del nostro applicativo.
-- "next"→ generata in maniera automatica dall’applicativo. se la eliminiamo e poi facciamo run dev verrà ricreata. Si tratta della cartella che conterrà la build. dell’applicazione quando eseguiamo il comando npm run build
-- "\_app.tsx"→ diciamo come è composto il nostro applicativo (lato react).
-- "\_document.tsx"→diciamo come è impostata la pagina.
-  (possiamo usarlo per inserire un class a TUTTE le pagine, o ad esempio il footer).
-
 ### TURBOPACK
 
 Il pacchetto turbopack in Next.js è un nuovo bundler (un sistema che prepara il codice per la produzione, raggruppando e ottimizzando i file) ottimizzato sia per javascript che per typescrit. E' scritto in linguaggio rust, e può essere utilizzato sia con il "Pages router" che con "l'app router". Con l'ultima versione di nextjs( Febbraio 2025) è stabile, pur non supportando ancora alcune funzioni. come ad esempio il next build. (supporta solo next dev).
+
+## FILE PRINCIPALI
+
+- "app" o "page (in base al tipo di router selezionato)--> dove si trovano i nostri componenti
+- "public"→ dove si trovano le risorse esterne (tipo le immagini).
+- "node_modules"→ contiene tutti i pacchetti necessari al funzionamento del nostro applicativo.
+- "next"→ generata in maniera automatica dall’applicativo. se la eliminiamo e poi facciamo run dev verrà ricreata. Si tratta della cartella che conterrà la build. dell’applicazione quando eseguiamo il comando npm run build
 
 ## PAGES ROUTER O APP ROUTER?
 
