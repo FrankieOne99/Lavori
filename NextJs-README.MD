@@ -3,65 +3,66 @@
 Nextjs è un FRAMEWORK per React.
 Facilita la creazione di web application e supporta la generazione di siti statici e rendering lato server.
 Si tratta di un framework, che rispetto alla semplice libreria React ci permette di creare delle applicazioni FULLSTACK.
+Si pone come obiettivo di rendere più semplice la costruzione di applicazioni react su larga, implementando funzionalità(come ad esempio il routing) che per essere realizzate in react classico necessiterebbero di liberie esterne
+
+### Attenzione:
+
+Nextjs è un framework fullstack di react, che a sua volta è una libreria di javascript.
+Una libreria è una raccolta di funzioni e codice già scritto che gli sviluppatori possono utilizzare per svolgere specifici compiti, come la gestione delle stringhe, l'accesso al database, o la manipolazione di dati. Mentre Un framework è un ambiente di sviluppo predefinito che fornisce una struttura e un set di regole per costruire un'applicazione intera.
 
 ## CARATTERISTICHE PRINCIPALi:
 
-- Rendering lato server (SSR)
-- Generazione di siti statici
-- Ottimizzazione automatica delle prestazioni
+### Rendering lato server (SSR)
 
-## VANTAGGI;
+Quando si sviluppa una pagina utilizzando React, il contenuto inizialmente non è presente nell'HTML che viene caricato dal browser. In particolare, se ispezioniamo la pagina, noteremo che all'interno del div con id "root" non ci sarà nessun dato visibile, poiché il contenuto viene aggiunto dinamicamente tramite JavaScript solo successivamente. Questo comportamento può causare dei problemi, soprattutto se la pagina deve caricare dati da un server, come ad esempio un elenco di immagini con relative descrizioni. In questi casi, l'utente potrebbe vedere un "loading" prolungato, con la pagina che si carica lentamente. Questo rallentamento può compromettere l'esperienza utente (UX), dando l'impressione di un'applicazione poco reattiva.
+
+Inoltre, il rendering lato client può rappresentare un ostacolo per l'ottimizzazione SEO (Search Engine Optimization). I motori di ricerca, infatti, durante la scansione di una pagina, vedono solo l'HTML iniziale, che non contiene i dati dinamici che vengono inseriti da JavaScript. Di conseguenza, il contenuto non viene visto dai motori di ricerca e la pagina non viene ottimizzata al meglio.
+
+Al contrario, Next.js risolve questi problemi grazie al rendering lato server (SSR - Server-Side Rendering). Con SSR, la pagina viene renderizzata completamente sul server prima di essere inviata al browser. Questo significa che, quando l'utente apre la pagina, vedrà subito il contenuto completo, riducendo il tempo di caricamento e migliorando significativamente l'esperienza utente. Inoltre, l'HTML che viene inviato ai motori di ricerca è già popolato con i dati, il che consente anche ai motori di ricerca di vedere il contenuto fin da subito, migliorando l'ottimizzazione SEO.
+
+### File base routing
+
+Con react noi relizziamo delle SPA (Single Page Application), ma con il routing diamo all'utente l'illusione di navigare fra più pagine
+(Poichè c'è un cambiamento nell'URL). Nelle applicazioni in react, è necessario installare una libreria (React Router) e scrivere anche alcune linee di codice. Con nextjs, tutto questo non è necessario poichè si le rotte vengono definite direttamente dai file e dalle cartelle.
+
+### Fullstack Capabilities
+
+Abbiamo definito nextjs un framework fullstack, ovvero che facilita di molto l'aggiunta di un backend al nostro progetto. E' possibile quindi gestire API e connettersi ad un database senza dover creare un altro progetto, oppure aggiungende librerie esterne
+
+## VANTAGGI
+
+### Rispetto a React
 
 - Migliore esperienza utente
 - Sviluppo rapido con funzionalità hot-reload
-  (essendo un framework, rispetto a react non dovrò installare librerie esterne)
+  (essendo un framework, non dovrò installare librerie esterne)
 - integrazione semplice con API e servizi web
 
-## ROUTING
-
-- Basato sul filesystem. Non è necessario configurare le rotte mediante il codice.
-- Ottimizzazione automatica dei percorsi
-
-## API ROUTES
-
-- Creazione API con funzioni serveless → nextjs è un framework FULLSTACK. Permette di generare anche il backend.
-- Supporto nativo per REST e GraphQL (nuovo pattern per la comunicazione tra client e backend).
-
-## PERSONALIZZAZIONE E CONFIGURAZIONE
+### Personalizzazione e configurazione
 
 - Supporto nativo di SASS
 - Estensibilità con plugin e pacchetti
 
-## SEO
+### SEO
 
 - Rispetto a React, che ha un routing virtuale, il routing è REALE.
 - Rapida indicizzazione con il pre-rendering e maggiore supporto per meta-tag e ottimizzazione SEO.
 
-## INTERNAZIONALIZZAZIONE
+### Internazionalizzazione
 
 La creazione di pagine multilingua è facilitata. Per fare ciò, la documentazione di NextJs consiglia di usare la libreria next-translate.
 
-## DEPLOY E HOSTING
+### Deploy e hosting
 
 Buona compatibilità con più piattaforme di hosting
 
-### Vercel
+## VERCEL
 
 Vercel è una piattaforma di hosting che rende molto facile e veloce pubblicare siti web e applicazioni web. Vercel, oltre a fornire i servizi di hosting è anche l'azienda che ha sviluppato nextjs. il comando per eseguire vercel da terminale è
 
 - npx vercel
 
 sarà necessario accedere con il proprio account (o crearne uno).
-
-## ECOSISTEMA E COMUNITA’
-
-Buona community e documentazione
-
-Rispetto ad altri Framework
-
-- Prestazioni migliori
-- Miglior supporto seo
-- Facilità di migrazione su altri framework
 
 ## INSTALLAZIONE
 
