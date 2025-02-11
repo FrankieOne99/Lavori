@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
 import React from "react";
-Link;
 
 const NewList = ({ news }) => {
   return (
