@@ -125,6 +125,22 @@ Next.js permette di usare CSS e Sass senza bisogno di configurazioni particolari
 
 Il middleware in Next.js è una funzionalità che ti permette di eseguire logica personalizzata prima che una richiesta raggiunga la rotta di destinazione. In altre parole, il middleware agisce come una sorta di "filtro" che e può eseguire operazioni come il controllo delle autorizzazioni, la gestione dei cookie, il reindirizzamento, l'analisi delle richieste, la gestione della sessione etc. Il file middleware fa inserito nella cartella principale del progetto "src".
 
+## NEXT AUTH
+
+NextAuth.js, che coi prossimi aggiornamenti diverrà Auth.js (Febbraio 2025) è una libreria open source che rappresenta un ottima soluzione per gestire le autenticazioni con Next.js
+
+### Caratteristiche principali:
+
+- Sicurezza elevata: Fornisce una gestione robusta delle sessioni, crittografia dei cookie e supporto per i moderni standard di sicurezza come l'autenticazione basata su JWT e OAuth2.
+
+- Scalabilità: Può supportare sia piccole applicazioni che progetti di grandi dimensioni.
+
+- Integrazione facile con database e servizi esterni: Offre supporto per l'integrazione con diversi database come MongoDB, MySQL, PostgreSQL
+
+- Supporto per più provider di autenticazione: Auth.js offre una vasta gamma di provider di autenticazione integrati, come Google, Facebook, Twitter, GitHub etc.
+
+- Supporto per JWT (JSON Web Token): Oltre alla gestione delle sessioni, Auth.js può utilizzare JWT per l'autenticazione stateless per applicazioni che richiedono un autenticazione decentralizzata.
+
 ## ROTTE DINAMICHE
 
 In nextjs è possibile generare delle rotte dinamiche.
