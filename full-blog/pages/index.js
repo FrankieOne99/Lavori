@@ -1,11 +1,41 @@
 import Hero from "@/components/home/hero";
 import FeaturedPost from "@/components/home/featured-post";
 
+const DUMMY_POSTS = [
+  {
+    title: "myTitle",
+    slug: "nextJs",
+    exercerp: "Nextjs is a reacr framework",
+    image: "getting-started-nextjs.png",
+    date: "2025-09-21",
+  },
+  {
+    title: "myTitle",
+    slug: "nextJs",
+    exercerp: "Nextjs is a reacr framework",
+    image: "getting-started-nextjs.png",
+    date: "2025-09-21",
+  },
+  {
+    title: "myTitle",
+    slug: "nextJs",
+    exercerp: "Nextjs is a reacr framework",
+    image: "getting-started-nextjs.png",
+    date: "2025-09-21",
+  },
+  {
+    title: "myTitle",
+    slug: "nextJs",
+    exercerp: "Nextjs is a reacr framework",
+    image: "getting-started-nextjs.png",
+    date: "2025-09-21",
+  },
+];
 const HomePage = () => {
   return (
     <div>
       <Hero />
-      {/* <FeaturedPost /> */}
+      <FeaturedPost posts={DUMMY_POSTS} />
     </div>
   );
 };
