@@ -1,9 +1,36 @@
+import AllPost from "@/components/posts/all-post";
+const DUMMY_POSTS = [
+  {
+    title: "myTitle",
+    slug: "nextJs",
+    excerp: "Nextjs is a react framework",
+    image: "getting-started-nextjs.png",
+    date: "2025-09-21",
+  },
+  {
+    title: "myTitle",
+    slug: "nextJs",
+    excerp: "Nextjs is a react framework",
+    image: "getting-started-nextjs.png",
+    date: "2025-09-21",
+  },
+  {
+    title: "myTitle",
+    slug: "nextJs",
+    excerp: "Nextjs is a react framework",
+    image: "getting-started-nextjs.png",
+    date: "2025-09-21",
+  },
+  {
+    title: "myTitle",
+    slug: "nextJs",
+    excerp: "Nextjs is a react framework",
+    image: "getting-started-nextjs.png",
+    date: "2025-09-21",
+  },
+];
 const PostsPage = () => {
-  return (
-    <div>
-      <h1>Our Post</h1>
-    </div>
-  );
+  return <AllPost posts={DUMMY_POSTS} />;
 };
 
 export default PostsPage;
