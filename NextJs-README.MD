@@ -166,7 +166,7 @@ Usando [[...]], puoi avere una rotta che "cattura "anche quando non ci sono para
 Le Route Groups consentono di suddividere le rotte in gruppi, raggruppando i file senza che la struttura delle cartelle influisca direttamente sulle URL. Questo è utile quando hai bisogno di gestire funzionalità specifiche senza dover cambiare la struttura delle rotte.
 Si indetificano, rinominando una cartella fra le partensi tonde. ES: (nome-cartella);
 
-## File nomi speciali:
+## FILE NOMI SPECIALI:
 
 ### Page
 
