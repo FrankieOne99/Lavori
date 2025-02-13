@@ -1,5 +1,6 @@
 import { db } from "@/db";
 import { redirect } from "next/navigation";
+
 const SnippetCreatePage = () => {
   async function createSnippet(formData: FormData) {
     //This need to be a server action!!
@@ -17,7 +18,6 @@ const SnippetCreatePage = () => {
       },
     });
     console.log(snippet);
-    //Redirect the ser back to the root route
     redirect("/");
   }
 
@@ -35,7 +35,7 @@ const SnippetCreatePage = () => {
 
         <div className="flex gap-4">
           <label className="w-12" htmlFor="code">
-            code
+            Code
           </label>
           <textarea name="code" className="border p-2 w-full" id="code" />
         </div>
@@ -46,5 +46,4 @@ const SnippetCreatePage = () => {
     </form>
   );
 };
-
 export default SnippetCreatePage;

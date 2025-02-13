@@ -14,7 +14,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <div className="container mx-auto px-12">{children}</div>
+        <div className="flex flex-col text-center">{children}</div>
       </body>
     </html>
   );
