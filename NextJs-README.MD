@@ -192,6 +192,8 @@ Nei progetti in vanilla React vengono usati i Client Component. Qui, react viene
 
 Con Next questo cambia, perchè next a differenza di react vanilla è un framework FULLSTACK. Il codice viene eseguito anche lato server (quindi nel backend). in Next TUTTI i component (pagine, layout etc) per default vengono renderizzati SOLO lato server.
 Proprio per questo, se eseguiamo un "console.log" in un component nextjs se guardiamo nella console dei devTools non vedremo nulla.
+Altro esempio è quando utilizziamo "fetch". possiamo utilizzare async e await direttamente all'interno del componente e quindi non abbiamo più necessità di usare useState o useEffect o librerie come redux, per recuperare dei dati.
+Nei server componets, tuttavia NON è possibile usare hook e event handler(onClik, DoubleClick, etc).
 
 I client component, invece vengono solo PRE-RENDERIZZATI sul server, per poi venire potenzialmente anche renderizzati sul server.
 Si tratta di component che il più delle volte contengono funzionalità disponibili solo dal client (esempio UseState o UseEffect o gli event Handler). Considerando che tutti i component sono di default server component per renderli client component dovviamo usare una direttiva:
