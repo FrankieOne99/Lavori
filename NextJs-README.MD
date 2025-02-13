@@ -3,9 +3,9 @@
 Nextjs è un FRAMEWORK per React.
 Facilita la creazione di web application e supporta la generazione di siti statici e rendering lato server.
 Si tratta di un framework, che rispetto alla semplice libreria React ci permette di creare delle applicazioni FULLSTACK.
-Si pone come obiettivo di rendere più semplice la costruzione di applicazioni react su larga, implementando funzionalità(come ad esempio il routing) che per essere realizzate in react classico necessiterebbero di liberie esterne
+Si pone come obiettivo di rendere più semplice la costruzione di applicazioni react su larga, implementando funzionalità(come ad esempio il routing) che per essere realizzate in react classico necessiterebbero di liberie esterne.
 
-### Attenzione:
+### NOTA: LIBRERIA VS FRAMEWORK
 
 Nextjs è un framework fullstack di react, che a sua volta è una libreria di javascript.
 Una libreria è una raccolta di funzioni e codice già scritto che gli sviluppatori possono utilizzare per svolgere specifici compiti, come la gestione delle stringhe, l'accesso al database, o la manipolazione di dati. Mentre Un framework è un ambiente di sviluppo predefinito che fornisce una struttura e un set di regole per costruire un'applicazione intera.
@@ -14,20 +14,20 @@ Una libreria è una raccolta di funzioni e codice già scritto che gli sviluppat
 
 ### Rendering lato server (SSR)
 
-Quando si sviluppa una pagina utilizzando React, il contenuto inizialmente non è presente nell'HTML che viene caricato dal browser. In particolare, se ispezioniamo la pagina, noteremo che all'interno del div con id "root" non ci sarà nessun dato visibile, poiché il contenuto viene aggiunto dinamicamente tramite JavaScript solo successivamente. Questo comportamento può causare dei problemi, soprattutto se la pagina deve caricare dati da un server, come ad esempio un elenco di immagini con relative descrizioni. In questi casi, l'utente potrebbe vedere un "loading" prolungato, con la pagina che si carica lentamente. Questo rallentamento può compromettere l'esperienza utente (UX), dando l'impressione di un'applicazione poco reattiva.
+Quando si sviluppa una pagina utilizzando React, questa viene renderizzata lato client. Il contenuto inizialmente non è presente nell'HTML che viene caricato dal browser. In particolare, se ispezioniamo la pagina, noteremo che all'interno del div con id "root" non ci sarà nessun dato visibile, poiché il contenuto viene aggiunto dinamicamente tramite JavaScript solo successivamente. Questo comportamento può causare dei problemi, soprattutto se la pagina deve caricare dati da un server, (esempio un elenco di immagini con relative descrizioni). In questi casi, l'utente potrebbe vedere un "loading" prolungato, con la pagina che si carica lentamente. Questo rallentamento può compromettere l'esperienza utente (UX), dando l'impressione di un'applicazione poco performante.
 
-Inoltre, il rendering lato client può rappresentare un ostacolo per l'ottimizzazione SEO (Search Engine Optimization). I motori di ricerca, infatti, durante la scansione di una pagina, vedono solo l'HTML iniziale, che non contiene i dati dinamici che vengono inseriti da JavaScript. Di conseguenza, il contenuto non viene visto dai motori di ricerca e la pagina non viene ottimizzata al meglio.
+Inoltre, il rendering lato client può rappresentare un ostacolo per l'ottimizzazione SEO (Search Engine Optimization). I motori di ricerca, infatti, durante la scansione di una pagina, vedono solo l'HTML iniziale, che non contiene i dati dinamici che vengono inseriti da JavaScript. Di conseguenza, il contenuto non viene ottimizzato al meglio.
 
-Al contrario, Next.js risolve questi problemi grazie al rendering lato server (SSR - Server-Side Rendering). Con SSR, la pagina viene renderizzata completamente sul server prima di essere inviata al browser. Questo significa che, quando l'utente apre la pagina, vedrà subito il contenuto completo, riducendo il tempo di caricamento e migliorando significativamente l'esperienza utente. Inoltre, l'HTML che viene inviato ai motori di ricerca è già popolato con i dati, il che consente anche ai motori di ricerca di vedere il contenuto fin da subito, migliorando l'ottimizzazione SEO.
+Al contrario, Next.js risolve questi problemi grazie al rendering lato server (SSR - Server-Side Rendering). Qui, la pagina viene renderizzata completamente sul server prima di essere inviata al browser. Questo significa che, quando l'utente apre la pagina, vedrà subito il contenuto completo, riducendo il tempo di caricamento e migliorando significativamente l'esperienza utente. Inoltre, l'HTML che viene inviato ai motori di ricerca è già popolato con i dati, il che consente anche ai motori di ricerca di vedere il contenuto fin da subito, migliorando l'ottimizzazione SEO.
 
 ### File base routing
 
 Con react noi relizziamo delle SPA (Single Page Application), ma con il routing diamo all'utente l'illusione di navigare fra più pagine
-(Poichè c'è un cambiamento nell'URL). Nelle applicazioni in react, è necessario installare una libreria (React Router) e scrivere anche alcune linee di codice. Con nextjs, tutto questo non è necessario poichè si le rotte vengono definite direttamente dai file e dalle cartelle.
+(Poichè c'è un cambiamento nell'URL). Nelle applicazioni in react, è necessario installare una libreria (React Router) e scrivere codice aggiuntivo. Con nextjs, tutto questo non è necessario poichè le rotte vengono definite direttamente dai file e dalle cartelle.
 
 ### Fullstack Capabilities
 
-Abbiamo definito nextjs un framework fullstack, ovvero che facilita di molto l'aggiunta di un backend al nostro progetto. E' possibile quindi gestire API e connettersi ad un database senza dover creare un altro progetto, oppure aggiungende librerie esterne
+Abbiamo definito nextjs un framework fullstack, ovvero che facilita di molto l'aggiunta di un backend al nostro progetto. E' possibile quindi gestire API e connettersi ad un database senza dover creare un altro progetto, oppure aggiungendo librerie esterne.
 
 ## VANTAGGI
 
@@ -83,10 +83,10 @@ Il pacchetto turbopack in Next.js è un nuovo bundler (un sistema che prepara il
 
 ## FILE PRINCIPALI
 
-- "app" o "page (in base al tipo di router selezionato)--> dove si trovano i nostri componenti
+- "app" o "page (in base al tipo di router selezionato)--> dove si trova il nostro codice
 - "public"→ dove si trovano le risorse esterne (tipo le immagini).
 - "node_modules"→ contiene tutti i pacchetti necessari al funzionamento del nostro applicativo.
-- "next"→ generata in maniera automatica dall’applicativo. se la eliminiamo e poi facciamo run dev verrà ricreata. Si tratta della cartella che conterrà la build. dell’applicazione quando eseguiamo il comando npm run build
+- "next"→ generata in maniera automatica dall’applicativo. se la eliminiamo e poi esguiamo il comando "run dev" verrà ricreata. Si tratta della cartella che conterrà la build. dell’applicazione quando eseguiamo il comando npm run build
 
 ## PAGES ROUTER O APP ROUTER?
 
@@ -142,7 +142,7 @@ NextAuth.js, che coi prossimi aggiornamenti diverrà Auth.js (Febbraio 2025) è 
 ## ROTTE DINAMICHE
 
 In nextjs è possibile generare delle rotte dinamiche.
-Se per esempio abbiamo un component "blog" al cui interno ci sono dei post, e vogliamo creare delle rotte per ciascun posto non è sostenibile creare un compoent per tutti i post. Possiamo, creare un unico component che aggiornerà la rotta in base al post selezionato. per fare ciò bastare creare una cartella il cui nome DEVE essere messo fra le quadre (esempio [slug] ), all'interno di Blog.
+Se per esempio abbiamo un component "blog" al cui interno ci sono dei post, e vogliamo creare delle rotte per ciascun post non è sostenibile creare un component per ogni singolo post. Possiamo, invece, creare un unico component che aggiornerà la rotta in base al post selezionato. per fare ciò bastare creare una cartella il cui nome DEVE essere messo fra le quadre (esempio [slug] ), all'interno di Blog.
 
 ## ROTTE PARALLELE
 
@@ -166,7 +166,7 @@ Usando [[...]], puoi avere una rotta che "cattura "anche quando non ci sono para
 Le Route Groups consentono di suddividere le rotte in gruppi, raggruppando i file senza che la struttura delle cartelle influisca direttamente sulle URL. Questo è utile quando hai bisogno di gestire funzionalità specifiche senza dover cambiare la struttura delle rotte.
 Si indetificano, rinominando una cartella fra le partensi tonde. ES: (nome-cartella);
 
-## PAGE, LAYOUT E LOADING
+## File nomi speciali:
 
 ### Page
 
@@ -180,6 +180,14 @@ In next è possibile creare Layout annidati. E' sufficiente creare il proprio La
 ### Loading
 
 Il file loading.js viene utilizzato per gestire e mostrare un "loading state" (stato di caricamento) quando un componente o una pagina è in fase di caricamento. È utile per creare una migliore esperienza utente, mostrando un'indicazione visiva (come un spinner o un messaggio) mentre i dati o il componente sono in attesa di essere caricati.
+
+### Not-found
+
+Gestisce la pagina di errore "404" (pagina non trovata). Quando ad una rotta non corrisponde nessuna pagina, nextjs ci reinderizzerò su questo file che può quindi essere personalizzato.
+
+### Error
+
+Gestisce gli errori nell'applicazione. Se si verifica un errore in un component, nextjs ci reinderizza su questo file che può quindi essere personalizzato.
 
 ## COMPONENTI
 
@@ -202,6 +210,10 @@ Si tratta di component che il più delle volte contengono funzionalità disponib
 
 ATTENZIONE: questi tipi di component esistono entrambi in react, ma funzionano e posso essere usati solo quando si usa un framework come Nextjs
 
+## SERVER ACTION
+
+Le Server Actions ti permettono di scrivere funzioni che vengono eseguite lato server, ma che possono essere invocate direttamente da un componente React lato client (senza bisogno di fare una richiesta HTTP o chiamare un'API separata).
+
 ## SUSPENSE
 
 In Next.js, Suspense è una funzionalità che permette di gestire il caricamento di dati asincroni e risorse in modo più elegante, migliorando l'esperienza utente. Risulta utile nella gestione del caricamento di componenti che dipendono da risorse esterne o dati che devono essere recuperati in modo asincrono (ad esempio, chiamate API).
@@ -215,14 +227,6 @@ le sue propietà obbligatorie sono:
 - alt-->Testo alternativo dell'immagine
 - width--> width NON determina la grandezza in pixel dell'immagine in questo caso, ma serve a migliorare la qualità dell'immagine.
 - height--> heigth NON determina la grandezza in pixel dell'immagine in questo caso, ma serve a migliorare la qualità dell'immagine.
-
-## DATABASE
-
-Nextjs ci permette anche di lavorare con i db. per prima cosa bisogna installare i pacchetti necessari con il comando:
-
-- npm install better-sqlite3
-
-Ci permetterà di lavorare su un db locale, senza necessità di utilizzare un server esterno
 
 ## CACHING
 
